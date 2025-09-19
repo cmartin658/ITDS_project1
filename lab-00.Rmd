@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Ash Warnes", "Kumi Stevens", "Selena Bobbica", 
+           "Shreya"),
+  github_username = c("ashburyw7", "kumi-stevens", "selena-314", 
+                      "ggshreya"), 
+  colour = c("green4", "goldenrod1", "pink", 
+             "blue4"),
+  hobby = c("art", "climbing", "violin", 
+            "cello"),
+  favourite_number = c(7, 3, 7, 2)
   )
 
 team_data
@@ -47,19 +47,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+graph shows github username against their favourite number, and the bar is the persons favourite colour
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "github username", 
+          y = "favourite number",
+          title = "introductions")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+labs adds labels to the axis and a title to the diagram
 
 ### Exercise 20
 
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+make people select options from a list since if people type technically similar hobbies in a different way they will be shown as different things. you could also present it as a pie chart instead.
